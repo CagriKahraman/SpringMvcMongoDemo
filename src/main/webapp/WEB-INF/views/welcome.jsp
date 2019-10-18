@@ -15,20 +15,18 @@
 			Mvc</h2>
 		<div>&nbsp;</div>
 
-		<!-- Div to add a new user to the mongo database -->
 		<div id="add_new_user">
 			<c:url var="addUrl" value="/customer/add" />
 			<a id="add" href="${addUrl}" class="btn btn-success">Add Customer</a>
 		</div>
 		<div>&nbsp;</div>
 
-		<!-- Table to display the user list from the mongo database -->
 		<table id="users_table" class="table">
 			<thead>
 				<tr align="center">
 					<th>Id</th>
 					<th>Name</th>
-					<th>LastName</th>
+					<th>Surname</th>
 					<th>Phone</th>
 					<th colspan="4"></th>
 				</tr>

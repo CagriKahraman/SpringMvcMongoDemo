@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,7 +10,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -33,21 +34,17 @@
 				required="required" />
 			<div>&nbsp;</div>
 
-			<br />
-			<input type="submit" value="Submit">
-
 			<button id="saveBtn" type="submit" class="btn btn-primary">Save</button>
-			<button id="cancelBtn" type="reset" class="btn btn-primary">Reset</button>
-
+			<button id="resett" type="reset" class="btn btn-primary">Reset</button>
 			<button onclick="cancelAction()" class="btn btn-primary">
 				Cancel</button>
-			<script type="text/javascript">
-				function cancelAction() {
-					window.location.href = "list";
-				}
-			</script>
-
 		</form:form>
+
+		<script type="text/javascript">
+			function cancelAction() {
+				window.location.href = "list";
+			}
+		</script>
 	</div>
 </body>
 </html>
